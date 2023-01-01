@@ -11,7 +11,164 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+  
 
+  var textInput1 = $('#hour-9').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton1 = $('#hour-9').children().eq(2); //target save button
+  console.log(saveButton1);
+
+  var eventDesc1 = localStorage.getItem('hour9');
+
+  saveButton1.on('click',function(){
+    var desc1 = $('#hour-9').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc)
+    localStorage.setItem('hour9', desc1);
+    //renderEvents();
+  })
+
+  function renderEvents(){
+    textInput1.text(eventDesc1);
+    textInput2.text(eventDesc2);
+    textInput3.text(eventDesc3);
+    textInput4.text(eventDesc4);
+    textInput5.text(eventDesc5);
+    textInput6.text(eventDesc6);
+    textInput7.text(eventDesc7);
+    textInput8.text(eventDesc8);
+    textInput9.text(eventDesc9);
+  }
+
+  var textInput2 = $('#hour-10').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton2 = $('#hour-10').children().eq(2); //target save button
+
+  var eventDesc2 = localStorage.getItem('hour10');
+
+  saveButton2.on('click',function(){
+    var desc2 = $('#hour-10').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc2)
+    localStorage.setItem('hour10', desc2);
+    //renderEvents();
+  })
+
+  var textInput3 = $('#hour-11').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton3 = $('#hour-11').children().eq(2); //target save button
+
+  var eventDesc3 = localStorage.getItem('hour11');
+
+  saveButton3.on('click',function(){
+    var desc3 = $('#hour-11').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc3)
+    localStorage.setItem('hour11', desc3);
+    //renderEvents();
+  })
+
+  var textInput4 = $('#hour-12').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton4 = $('#hour-12').children().eq(2); //target save button
+
+  var eventDesc4 = localStorage.getItem('hour12');
+
+  saveButton4.on('click',function(){
+    var desc4 = $('#hour-12').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc4)
+    localStorage.setItem('hour10', desc4);
+    //renderEvents();
+  })
+
+  var textInput5 = $('#hour-1').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton5 = $('#hour-1').children().eq(2); //target save button
+
+  var eventDesc5 = localStorage.getItem('hour1');
+
+  saveButton5.on('click',function(){
+    var desc5 = $('#hour-1').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc5)
+    localStorage.setItem('hour1', desc5);
+    //renderEvents();
+  })
+
+  var textInput6 = $('#hour-2').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton6 = $('#hour-2').children().eq(2); //target save button
+
+  var eventDesc6 = localStorage.getItem('hour2');
+
+  saveButton6.on('click',function(){
+    var desc6 = $('#hour-2').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc6)
+    localStorage.setItem('hour2', desc6);
+    //renderEvents();
+  })
+
+  var textInput7 = $('#hour-3').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton7 = $('#hour-3').children().eq(2); //target save button
+
+  var eventDesc7 = localStorage.getItem('hour3');
+
+  saveButton7.on('click',function(){
+    var desc7 = $('#hour-3').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc7)
+    localStorage.setItem('hour3', desc7);
+    //renderEvents();
+  })
+
+  var textInput8 = $('#hour-4').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton8 = $('#hour-4').children().eq(2); //target save button
+
+  var eventDesc8 = localStorage.getItem('hour4');
+
+  saveButton8.on('click',function(){
+    var desc8 = $('#hour-4').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc8)
+    localStorage.setItem('hour4', desc8);
+    //renderEvents();
+  })
+
+  var textInput9 = $('#hour-5').children().eq(1); //target textArea
+  //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
+  
+
+  var saveButton9 = $('#hour-5').children().eq(2); //target save button
+
+  var eventDesc9 = localStorage.getItem('hour5');
+
+  saveButton9.on('click',function(){
+    var desc9 = $('#hour-5').children().eq(1).val();
+    //console.log(textAreaDesc); 
+    console.log(desc9)
+    localStorage.setItem('hour5', desc9);
+    //renderEvents();
+  })
 
 
   // TODO: Add code to apply the past, present, or future class to each time
@@ -358,18 +515,10 @@ $(function () {
   var today = dayjs().format("dddd, MMMM DD");
    $('#currentDay').text(today);
 
-  //var currentHour = dayjs().format("H").toString();
-  //var newhour = '5PM'
-  //console.log(currentHour)
-  //var pasthour = newhour.charAt(0);
-  //console.log(pasthour)
-  //const diff = (new Date(null, null, null, currentHour) - new Date(null, null, null, pasthour)) / (1000 * 60 * 60) 
-  //console.log(diff)
-  //console.log(newhour)
-  //var days = newhour.diff(currentHour, 'hour');
-  //console.log(days);
+renderEvents();
 
- 
-//var hour = dayjs().format("HA").toString();
-//console.log(hour)
 });
+
+
+
+
