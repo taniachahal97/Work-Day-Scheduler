@@ -12,7 +12,6 @@ $(function () {
   // useful when saving the description in local storage?
   //
   
-
   var textInput1 = $('#hour-9').children().eq(1); //target textArea
   //var textAreaDesc = $('#hour-9').children().eq(1).text(); // textArea value
   
@@ -25,8 +24,9 @@ $(function () {
   saveButton1.on('click',function(){
     var desc1 = $('#hour-9').children().eq(1).val();
     //console.log(textAreaDesc); 
-    console.log(desc)
+    console.log(desc1)
     localStorage.setItem('hour9', desc1);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -55,6 +55,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc2)
     localStorage.setItem('hour10', desc2);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -71,6 +72,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc3)
     localStorage.setItem('hour11', desc3);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -87,6 +89,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc4)
     localStorage.setItem('hour10', desc4);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -103,6 +106,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc5)
     localStorage.setItem('hour1', desc5);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -119,6 +123,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc6)
     localStorage.setItem('hour2', desc6);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -135,6 +140,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc7)
     localStorage.setItem('hour3', desc7);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -151,6 +157,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc8)
     localStorage.setItem('hour4', desc8);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -167,6 +174,7 @@ $(function () {
     //console.log(textAreaDesc); 
     console.log(desc9)
     localStorage.setItem('hour5', desc9);
+    $('#appointment-message').text('Appointment Added to local Storage')
     //renderEvents();
   })
 
@@ -512,7 +520,7 @@ $(function () {
   
 
   // TODO: Add code to display the current date in the header of the page.
-  var today = dayjs().format("dddd, MMMM DD");
+  var today = dayjs().format("dddd, MMMM DD, YYYY");
    $('#currentDay').text(today);
 
 renderEvents();
