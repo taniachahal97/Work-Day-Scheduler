@@ -185,6 +185,12 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 
+  //
+  // TODO: Add code to get any user input that was saved in localStorage and set
+  // the values of the corresponding textarea elements. HINT: How can the id
+  // attribute of each time-block be used to do this?
+  //
+
   var currentHour = dayjs().format("H").toString();
   var currentHourInt = parseInt(currentHour);
 
@@ -212,19 +218,11 @@ $(function () {
     var value5 = $('#hour-1').children().eq(0).text()
 
     if(newHour == value5){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
-      $('#hour-10').addClass('row');
+      //$('#hour-10').addClass('row');
       $('#hour-10').addClass('past');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
 
       $('#hour-11').addClass('past');
       $('#hour-12').addClass('past');
@@ -241,20 +239,11 @@ $(function () {
     var value6 = $('#hour-2').children().eq(0).text()
 
     if(newHour == value6){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
-      $('#hour-10').addClass('row');
+      //$('#hour-10').addClass('row');
       $('#hour-10').addClass('past');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
       $('#hour-11').addClass('past');
       $('#hour-12').addClass('past');
       $('#hour-1').addClass('past');
@@ -267,20 +256,11 @@ $(function () {
 
     var value7 = $('#hour-3').children().eq(0).text()
     if(newHour == value7){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
-      $('#hour-10').addClass('row');
+      //$('#hour-10').addClass('row');
       $('#hour-10').addClass('past');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
       $('#hour-11').addClass('past');
       $('#hour-12').addClass('past');
       $('#hour-1').addClass('past');
@@ -294,20 +274,11 @@ $(function () {
 
     var value8 = $('#hour-4').children().eq(0).text()
     if(newHour == value8){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
-      $('#hour-10').addClass('row');
+      //$('#hour-10').addClass('row');
       $('#hour-10').addClass('past');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
       $('#hour-11').addClass('past');
       $('#hour-12').addClass('past');
       $('#hour-1').addClass('past');
@@ -320,20 +291,11 @@ $(function () {
 
     var value9 = $('#hour-5').children().eq(0).text()
     if(newHour == value9){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
-      $('#hour-10').addClass('row');
+      //$('#hour-10').addClass('row');
       $('#hour-10').addClass('past');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
       $('#hour-11').addClass('past');
       $('#hour-12').addClass('past');
       $('#hour-1').addClass('past');
@@ -348,15 +310,6 @@ $(function () {
   
   
   if(currentHourInt > 17 && currentHourInt < 24){
-    $('#hour-9').addClass('row');
-    $('#hour-10').addClass('row');
-    $('#hour-11').addClass('row');
-    $('#hour-12').addClass('row');
-    $('#hour-1').addClass('row');
-    $('#hour-2').addClass('row');
-    $('#hour-3').addClass('row');
-    $('#hour-4').addClass('row');
-    $('#hour-5').addClass('row');
 
     $('#hour-9').addClass('past');
     $('#hour-10').addClass('past');
@@ -370,15 +323,6 @@ $(function () {
   }
 
   if(currentHourInt >= 0 && currentHourInt < 9){
-    $('#hour-9').addClass('row');
-    $('#hour-10').addClass('row');
-    $('#hour-11').addClass('row');
-    $('#hour-12').addClass('row');
-    $('#hour-1').addClass('row');
-    $('#hour-2').addClass('row');
-    $('#hour-3').addClass('row');
-    $('#hour-4').addClass('row');
-    $('#hour-5').addClass('row');
 
     $('#hour-9').addClass('future');
     $('#hour-10').addClass('future');
@@ -398,19 +342,8 @@ $(function () {
 
   
     if(hour == value1){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('present');
-
-      $('#hour-10').addClass('row');
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
-
       $('#hour-10').addClass('future');
       $('#hour-11').addClass('future');
       $('#hour-12').addClass('future');
@@ -425,20 +358,11 @@ $(function () {
     var value2 = $('#hour-10').children().eq(0).text()
 
     if(hour == value2){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
       $('#hour-10').addClass('row');
       $('#hour-10').addClass('present');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
       $('#hour-11').addClass('future');
       $('#hour-12').addClass('future');
       $('#hour-1').addClass('future');
@@ -454,20 +378,11 @@ $(function () {
 
     if(hour == value3){
 
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
-      $('#hour-10').addClass('row');
+      //$('#hour-10').addClass('row');
       $('#hour-10').addClass('past');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
       $('#hour-11').addClass('present');
       $('#hour-12').addClass('future');
       $('#hour-1').addClass('future');
@@ -481,20 +396,11 @@ $(function () {
     var value4 = $('#hour-12').children().eq(0).text()
 
     if(hour == value4){
-      $('#hour-9').addClass('row');
+      //$('#hour-9').addClass('row');
       $('#hour-9').addClass('past');
 
-      $('#hour-10').addClass('row');
+      //$('#hour-10').addClass('row');
       $('#hour-10').addClass('past');
-
-      $('#hour-11').addClass('row');
-      $('#hour-12').addClass('row');
-      $('#hour-1').addClass('row');
-      $('#hour-2').addClass('row');
-      $('#hour-3').addClass('row');
-      $('#hour-4').addClass('row');
-      $('#hour-5').addClass('row');
-
       $('#hour-11').addClass('past');
       $('#hour-12').addClass('present');
       $('#hour-1').addClass('future');
@@ -506,18 +412,6 @@ $(function () {
 
 
   }
-
-
-
-
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-
-  
-  
 
   // TODO: Add code to display the current date in the header of the page.
   var today = dayjs().format("dddd, MMMM DD, YYYY");
