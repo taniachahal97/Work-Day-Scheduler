@@ -14,7 +14,7 @@ Clone the Work-Day-Scheduler repository to your local machine. The Work-Day-Sche
 Open the index.html file in VS Code and run the file in the browser to view the webpage. 
 
 ![portfolio image 1](images/image-1.png)
-
+![portfolio image 2](images/image-2.png)
 
 
 ## License
